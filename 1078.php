@@ -1,15 +1,11 @@
 <?php
 //Tabuada 
 
-$a = fgets(STDIN);
-$y = 1;
+$n = intval(fgets(STDIN));
 
-while ($y <= 10) {
-    
-    $t = $y * $a;
-    
-    echo "$y x $a = $t" . PHP_EOL;
-
-    $y++;
+for ($i = 1; $i <= 10; $i++) {
+    $resultado = $i * $n;
+    echo $i . " x " . $n . " = " . $resultado . "\n";
 }
+
 ?>

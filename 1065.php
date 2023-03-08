@@ -1,26 +1,15 @@
 <?php
 //Pares entre Cinco Numeros
 
-$a = fgets(STDIN);
-$b = fgets(STDIN);
+$count = 0;
 
-if ($a > $b)
-{
-    $maior = $a;
-    $menor = $b;
-}
-else
-{
-    $maior = $b;
-    $menor = $a;
+for ($i = 0; $i < 5; $i++) {
+  $num = intval(fgets(STDIN));
+  if ($num % 2 == 0) {
+    $count++;
+  }
 }
 
-for ($i = $menor + 1; $i < $maior; $i++)
-{
-    if (($i % 2) == 0)
-    {
-        echo "$i" . PHP_EOL;
-    }
-}
+echo "$count valores pares\n";
 
 ?>
