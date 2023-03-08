@@ -6,5 +6,4 @@ $b = fgets(STDIN);
 $c = $a + $b;
 
 echo "X = $c\n";
-
-?>
+?> 

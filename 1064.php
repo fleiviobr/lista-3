@@ -14,4 +14,4 @@ for ($i = 1; $i <= 6; $i++)
     }
 echo "$positivos valores positivos" . PHP_EOL;
 echo number_format($soma / $positivos, 1) . PHP_EOL;
-?>
+?> 
