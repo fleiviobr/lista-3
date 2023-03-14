@@ -2,18 +2,12 @@
 //Sequencia IJ 4
 
 $i = 0;
+$j = 1;
 
-while (true) {
-    $j= $i + 1;
-    for ($x = 1 ; $x <= 3; $x++) {
-        echo "I=" . number_format($i, 1, '.', '') . " J=" . number_format($j, 1, '.', '') . PHP_EOL;
-        $j ++;
-        
-    }
-    $i += 0.2;
-
-    if ($i > 2) {
-        break;
-    }
+while($i <= 2.1){
+   echo  "I=$i J=" . ($j+$i)  . PHP_EOL;
+   echo  "I=$i J=" . ($j+1+$i) . PHP_EOL;
+   echo  "I=$i J=" . ($j+2+$i) . PHP_EOL;
+    $i+= 0.2;
 }
-?>  
+?>
